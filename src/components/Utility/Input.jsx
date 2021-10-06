@@ -17,7 +17,7 @@ const InputComponent = (props) => {
                 <Input
                     placeholder={props.placeholder || ''}
                     error={props.error} type={props.type || "text"}
-                    name={props.label.toLowerCase()}
+                    name={props.name.toLowerCase()}
                 />
             }
             <InputLabel>{props.label}</InputLabel>

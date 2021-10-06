@@ -81,9 +81,9 @@ const About = {
         description: "I am a thrid-year Computer Engineering student who has extreme passion for Artificial Intelligence. I write blogs related to Deep Learning, Machine Learning, Data Science and sometimes about Python. Here to share my knowledge with the community! ",
     },
     social: {
-        instagram: "stevehayes",
-        github: "stevehayes",
-        linkedin: "stephenahayes"
+        instagram: "yasho_1921",
+        github: "yasho191",
+        linkedin: "yashowardhan-shinde-1636971b1"
     },
 
 };

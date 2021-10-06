@@ -9,7 +9,7 @@ class ContactForm extends React.Component {
 	sendEmail(e) {
 		e.preventDefault();    //This is important, i'm not sure why, but the email won't send without it
 
-		emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', e.target, 'YOUR_USER_ID')
+		emailjs.sendForm('service_z4e47ot', 'template_6jyjqgp', e.target, 'user_WvCvC4ocWIPTUwaxrCF3S')
 			.then((result) => {
 				window.location.reload()  //This is if you still want the page to reload (since e.preventDefault() cancelled that behavior) 
 			}, (error) => {
@@ -19,9 +19,9 @@ class ContactForm extends React.Component {
 
     render() {
 		return (
-			<form action={Data.contact.formspree} method="POST">
-				<Input autocomplete="off" label="Name" />
-				<Input autocomplete="on" label="Email" />
+			<form className="contact-form" onSubmit={this.sendEmail}>
+				<Input autocomplete="on" label="Name" name={"from_name"}/>
+				<Input type={"email"} autocomplete="on" label="Email" name={"from_email"}/>
 				<Input autocomplete="off" label="Message" textArea />
 				<Button right submit text="Send Message"/>
 			</form>
